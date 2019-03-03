@@ -5,12 +5,12 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
 
 app = Flask(__name__)
  
-line_bot_api = LineBotApi('nMgPnrhW5yQ9V71vrj1ogdtUzjyltjfNQdVSceFeVj+ENPvKDz2NTh2MIUxC3ZzRoTfOMEdsCXC+V7XY8noc6xkvLq9gb2nLtK6JPVEZfpUxc8zaONbbNTcISYeu3zAT7eItChzE/amuV8IHjm/QdAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('79ebe82f6d81d30da6bfac188eaaa83b')
+line_bot_api = LineBotApi('nDcFl4+w5pD7AwkkSPoXmILhctD/uoP62NFU0lus/Eq8O6e5HNxDWIOZ8K6pL2KSSgH9rSYLgbz84hXitQYR3c1qgDjdT9a8SXjPIPs0TIMWyZpHKidWLf3zZAqEjSDPCx3ayMJXiCRllsoh51MdLgdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('851cd192f64d18ef3c9b05ae5eddaf7d')
  
 @app.route("/")
 def hello():
-    return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว"
+    return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว ครั้งที่ 1"
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
