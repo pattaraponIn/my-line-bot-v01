@@ -37,6 +37,26 @@ def handle_message(event):
         line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage("led on"))
+    elif text=="s2":
+        line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage("led off"))
+    elif text=="s3":
+        line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage("โชว์ อุณหภูมิความชื้น"))
+    elif text=="s4":
+        line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage("โชว์ รูปภาพ"))
+    elif text=="s5":
+        line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage("โชว์ 1 "))
+    elif text=="s6":
+        line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage("โชว์ 2 ")) 
 
 
 if __name__ == "__main__":
