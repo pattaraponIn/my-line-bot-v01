@@ -34,10 +34,9 @@ def webhook():
 def handle_message(event):
     text=event.message.text
     if text=="s1":
-        TextSendMessage("led on")
-    line_bot_api.reply_message(
+        line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage("led on"))
 
 
 if __name__ == "__main__":
