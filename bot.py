@@ -10,7 +10,7 @@ handler = WebhookHandler('7cae6d4c3810f294802285d6ccd82a77')
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว"
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
