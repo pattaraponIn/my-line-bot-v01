@@ -10,7 +10,7 @@ handler = WebhookHandler('851cd192f64d18ef3c9b05ae5eddaf7d')
  
 @app.route("/")
 def hello():
-    return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว ครั้งที่ 4"
+    return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว ครั้งที่ 5"
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
@@ -52,11 +52,11 @@ def handle_message(event):
     elif text=="s5":
         line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage("โชว์ 1 "))
+        TextSendMessage("โชว์ โปรแกรม "))
     elif text=="s6":
         line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage("โชว์ 2 ")) 
+        TextSendMessage("โชว์ ต้นไม้ ")) 
 
 
 if __name__ == "__main__":
